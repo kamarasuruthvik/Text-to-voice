@@ -11,6 +11,9 @@ var pitchValue= document.querySelector('.pitch-value');
 var rate = document.querySelector('#rate');
 var rateValue= document.querySelector('.rate-value');
 
+var resume = document.querySelector("#play");
+var pause = document.querySelector("#pause");
+
 var voices=[];
 
 
@@ -81,11 +84,28 @@ inputForm.addEventListener('submit', e=>{
     inputTxt.blur();
 }
 )
-pitch.onchange = function() {
+pitch.oninput = function() {
     pitchValue.textContent = pitch.value;
   }
   
-  rate.onchange = function() {
+  rate.oninput = function() {
     rateValue.textContent = rate.value;
   }
 
+
+function playOnClick() {
+  if (synth.paused) {
+    /* unpause/resume narration */
+    synth.resume();
+  }
+}
+
+function pauseOnCLick() {
+  if (synth.speaking && !synth.paused) {
+    /* pause narration */
+    synth.pause();
+  }
+}
+
+resume.addEventListener("click", playOnClick);
+pause.addEventListener("click", pauseOnCLick);
