@@ -8,6 +8,7 @@ A text-to-speech component that employs  JavaScript API  **SpeechSynthesis**. Th
 
 
 ## Demo Link
+You can view how this works using this link
 https://kamarasuruthvik.github.io/Text-to-voice/
 
 ## Screenshot
