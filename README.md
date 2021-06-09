@@ -11,4 +11,5 @@ A text-to-speech component that employs  JavaScript API  **SpeechSynthesis**. Th
 https://kamarasuruthvik.github.io/Text-to-voice/
 
 ## Screenshot
-![Screenshot 2021-06-09 at 08 44 13](https://user-images.githubusercontent.com/45104082/121287330-f570f080-c8fe-11eb-92fe-ba657c73d28a.png)
+![Screenshot 2021-06-09 at 08 43 09](https://user-images.githubusercontent.com/45104082/121291519-05d89980-c906-11eb-9aa7-618c0b78fe02.png)
+
